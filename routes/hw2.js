@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/wow')
+mongoose.connect('mongodb://localhost/cs591')
 const db = mongoose.connection
 db.once('open', function () {
     console.log('Connection successful.')
