@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 /* GET home page. */
 router.get('/:string', function(req, res, next) {
@@ -8,8 +8,8 @@ router.get('/:string', function(req, res, next) {
 });
 
 router.post('/', function(req, res, next) {
-    var string = req.body.string;
-    var length = string.length;
+    let string = req.body.string;
+    let length = string.length;
     res.send('{"string":' + '"' + string + '", "length":' + length + '}');
 })
 
